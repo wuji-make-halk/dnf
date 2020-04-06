@@ -1,0 +1,5 @@
+#github "hackiftekhar/IQKeyboardManager"
+#github "iTofu/LCActionSheet"
+#github "SnapKit/Masonry"
+#github "jdg/MBProgressHUD"
+github "realm/realm-cocoa"

@@ -1,0 +1,124 @@
+//
+//  PrefixHeader.pch
+//  dnf
+//
+//  Created by wake on 2016/9/27.
+//  Copyright © 2016年 wake. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+
+typedef NS_ENUM(NSInteger, TabBarItemType) {
+    QTabBarItemServicer,    //
+    QTabBarItemTask,        //
+    QTabBarItemMine         //
+};
+
+typedef NS_ENUM(NSInteger, QSMSType) {
+    QSMSSignUp,         //注册
+    QSMSPhone,          //修改手机号
+    QSMSPassword,       //修改密码
+};
+
+typedef NS_ENUM(NSInteger, QSignState) {
+    QSignInState,    //登录
+    QSignUpState,    //注册
+    QSignOutState,    //退出
+    QSignTimeoutSate  //超时
+};
+
+typedef NS_ENUM(NSInteger, QValidationType) {
+    QValidationChangePhoneType,
+    QValidationChangePasswordType,
+    QValidationForgotPasswordType
+};
+
+typedef NS_ENUM(NSInteger, QServicerPickerType) {
+    QServicerPickerFormat = 1,
+    QServicerPickerLevel,
+    QServicerPickerAREA,
+    QServicerPickerPosition,
+    QServicerPickerAs
+};
+
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <Masonry/Masonry.h>
+#import <LCActionSheet/LCActionSheet.h>
+#import <AliyunOSSiOS/OSSService.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <SAMKeychain/SAMKeychain.h>
+#import <Realm/Realm.h>
+#import <JKCountDownButton/JKCountDownButton.h>
+#import <MJRefresh/MJRefresh.h>
+
+#import "UIViewController+BackButtonHandler.h"
+#import "MBProgressHUD+MJ.h"
+#import "NSString+MD5.h"
+#import "UIImage+Extension.h"
+#import "UITabBar+Badge.h"
+#import "UIBarButtonItem+Badge.h"
+
+#import "Singleton.h"
+#import "QAliyunOSS.h"
+
+#import "QBaseNavigationController.h"
+#import "QBaseTableViewController.h"
+#import "QBaseTableViewCell.h"
+
+#import "QRequestData.h"
+#import "QResponseData.h"
+#import "QAPIClient.h"
+
+
+#import "EMSDK.h"
+#import "EaseUI.h"
+#import "ChatUIHelper.h"
+
+#endif
+
+#define QTTabBarSelect   @"QTTabBarSelect"
+#define QSginStateObs   @"QSginStateObs"
+
+#define AA_WEAK_MAKE(var) __weak __typeof(&*self)
+
+#define kKeychainService [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"]
+#define kTokenName @"token"
+#define kSessionId @"connect.sid"
+#define kResponseSuccess 0
+#define kResponseSignTimeout -7
+
+#define addObs(a, b)\
+[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(b) name:a object:nil]
+
+#define removeObs(eventName)\
+[[NSNotificationCenter defaultCenter]removeObserver:self name:eventName object:nil]
+
+#define postEvent(eventName)\
+[[NSNotificationCenter defaultCenter] postNotificationName:eventName object:nil]
+
+#define postEventWithObject(eventName, obj)\
+[[NSNotificationCenter defaultCenter] postNotificationName:eventName object:obj]
+
+#define postEventWithObjectData(eventName, obj, data)\
+[[NSNotificationCenter defaultCenter] postNotificationName:eventName object:obj userInfo:data]
+
+
+
+// 消息通知
+#define kSetupUntreatedApplyCount @"setupUntreatedApplyCount"// 未处理的好友申请
+#define kSetupUnreadMessageCount @"setupUnreadMessageCount"// 未读聊天消息数
+#define kConnectionStateChanged @"ChatConnectionStateChanged"// 环信服务器连接状态改变
+#define kChatDidReceiveMessages @"ChatDidReceiveMessages" // 收到消息
+#define kUpdateConversationList @"UpdateConversationList"   //消息有变化
+
+#endif /* PrefixHeader_pch */

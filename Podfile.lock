@@ -1,0 +1,62 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AliyunOSSiOS (2.5.2)
+  - IQKeyboardManager (3.3.7)
+  - JKCountDownButton (1.0.0)
+  - LCActionSheet (2.5.1):
+    - Masonry (~> 1.0.1)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - Realm (2.0.2):
+    - Realm/Headers (= 2.0.2)
+  - Realm/Headers (2.0.2)
+  - SAMKeychain (1.5.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - AliyunOSSiOS
+  - IQKeyboardManager
+  - JKCountDownButton
+  - LCActionSheet
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - Realm
+  - SAMKeychain
+  - SDWebImage (~> 3.8)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AliyunOSSiOS: 146e2766bf73df9c9f645de6f2d8a92ceb7c8be4
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  JKCountDownButton: 7b30571da56af2e52272a6974413f4a0c83a5e94
+  LCActionSheet: 8f0d344225461d686adf6719820d43b2062a53f3
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
+  SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+
+COCOAPODS: 0.39.0

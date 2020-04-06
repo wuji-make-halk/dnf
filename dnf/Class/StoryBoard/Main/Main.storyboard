@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oxT-ts-Hp8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Tab Bar Controller-->
+        <scene sceneID="M2o-rP-hep">
+            <objects>
+                <tabBarController id="Nrv-o7-fpS" customClass="QBaseTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cKA-nb-u5K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yuj-Js-6dS" kind="relationship" relationship="viewControllers" id="gHR-IF-IOh"/>
+                        <segue destination="ouS-Ve-jhC" kind="relationship" relationship="viewControllers" id="lQC-CT-noG"/>
+                        <segue destination="D3F-1y-6kt" kind="relationship" relationship="viewControllers" id="TaN-h4-2ZF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCy-t0-q7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="-403"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wUn-lx-LHD">
+            <objects>
+                <viewController id="oxT-ts-Hp8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S6f-eO-zyV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tf6-oJ-hRW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W7r-FL-Ue8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7b6-q5-hhR">
+                                <frame key="frameInset" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Nrv-o7-fpS" kind="embed" id="jIu-8x-FA2"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAk-ng-5Ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746.39999999999998" y="139.880059970015"/>
+        </scene>
+        <!--QServicer-->
+        <scene sceneID="E8i-vd-Ao9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QServicer" id="Yuj-Js-6dS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Conference" selectedImage="Conference" id="QkF-MH-LQj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyj-QP-bSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="141"/>
+        </scene>
+        <!--QMine-->
+        <scene sceneID="jzj-Mi-C4L">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QMine" id="D3F-1y-6kt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="User Menu Male" selectedImage="User Menu Male" id="Q7o-Ms-nkU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDT-nZ-NKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="141"/>
+        </scene>
+        <!--QTask-->
+        <scene sceneID="Htj-Ij-ao8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QTask" id="ouS-Ve-jhC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Torah" id="VsJ-X7-rBq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUC-BA-Kcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Conference" width="50" height="50"/>
+        <image name="Torah" width="30" height="30"/>
+        <image name="User Menu Male" width="30" height="30"/>
+    </resources>
+</document>
